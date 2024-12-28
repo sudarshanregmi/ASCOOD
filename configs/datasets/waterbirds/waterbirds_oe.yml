@@ -1,0 +1,15 @@
+name: waterbirds_oe
+
+dataset:
+  name: waterbirds_oe
+  split_names: [train, oe, val, test]
+  oe:
+    dataset_class: ImglistDataset
+    data_dir: ./data/images_largescale/
+    imglist_pth: ./data/benchmark_imglist/cars/cars_ood.txt
+    batch_size: 128
+    shuffle: True
+    interpolation: bilinear
+    normalization_type: imagenet
+    pre_size: 256
+    image_size: 224

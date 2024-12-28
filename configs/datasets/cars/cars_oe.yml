@@ -1,0 +1,13 @@
+name: cars_oe
+
+dataset:
+  name: cars_oe
+  split_names: [train, oe, val, test]
+  oe:
+    dataset_class: ImglistDataset
+    data_dir: ./data/images_largescale/
+    imglist_pth: ./data/benchmark_imglist/sun/sun.txt
+    batch_size: 32
+    shuffle: True
+    interpolation: bilinear
+    normalization_type: imagenet
