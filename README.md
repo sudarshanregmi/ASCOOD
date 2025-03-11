@@ -2,7 +2,8 @@
 This codebase provides a Pytorch implementation of:
 
 >**Going Beyond Conventional OOD Detection**  
-[![ASCOOD](https://img.shields.io/badge/arXiv'24-ASCOOD-fdd7e6?style=for-the-badge)](https://arxiv.org/abs/2411.10794)  
+[![ASCOOD](https://img.shields.io/badge/arXiv'25-ASCOOD-fdd7e6?style=for-the-badge)](https://arxiv.org/abs/2411.10794)
+[![i-ODIN](https://img.shields.io/badge/arXiv'25-iODIN-fdd7e6?style=for-the-badge)](https://arxiv.org/abs/2411.10794)
 Sudarshan Regmi
 
 <p align="center">
@@ -10,13 +11,13 @@ Sudarshan Regmi
 </p>
 
 ## Abstract
-Out-of-distribution (OOD) detection is critical to ensure the safe deployment of deep learning models in critical applications. Deep learning models can often misidentify OOD samples as in-distribution (ID) samples. This vulnerability worsens in the presence of spurious correlation in the training set. Likewise, in fine-grained classification settings, detection of fine-grained OOD samples becomes inherently challenging due to their high similarity to ID samples. However, current research on OOD detection has largely ignored these challenging scenarios, focusing instead on relatively easier (conventional) cases. In this work, we present a unified Approach to Spurious, fine-grained, and Conventional OOD Detection (ASCOOD). First, we propose synthesizing virtual outliers from ID data by approximating the destruction of invariant features. We identify invariant features with the pixel attribution method using the model being learned. This approach eliminates the burden of curating external OOD datasets. Then, we simultaneously incentivize ID classification and predictive uncertainty towards the virtual outliers leveraging standardized feature representation. Our approach effectively mitigates the impact of spurious correlations and encourages capturing fine-grained attributes. Extensive experiments across six datasets demonstrate the merit of ASCOOD in spurious, fine-grained, and conventional settings.
+Out-of-distribution (OOD) detection is critical to ensure the safe deployment of deep learning models in critical applications. Deep learning models can often misidentify OOD samples as in-distribution (ID) samples. This vulnerability worsens in the presence of spurious correlation in the training set. Likewise, in fine-grained classification settings, detection of fine-grained OOD samples becomes inherently challenging due to their high similarity to ID samples. However, current research on OOD detection has largely ignored these challenging scenarios, focusing instead on relatively easier (conventional) cases. In this work, we present a unified Approach to Spurious, fine-grained, and Conventional OOD Detection (ASCOOD). First, we propose synthesizing virtual outliers from ID data by approximating the destruction of invariant features. To this end, we identify invariant features with the pixel attribution method using the model being learned. This approach eliminates the burden of curating external OOD datasets. Then, we simultaneously incentivize ID classification and predictive uncertainty towards virtual outliers leveraging standardized feature representation. Our approach effectively mitigates the impact of spurious correlations and encourages capturing fine-grained attributes. Extensive experiments across seven datasets demonstrate the merit of ASCOOD in spurious, fine-grained, and conventional settings.
 
 <span>Check other works:</span>
 
 <a href="https://github.com/sudarshanregmi/t2fnorm"><img src="https://img.shields.io/badge/CVPRW'24-T2FNorm-fdd7e6?style=for-the-badge" alt="t2fnorm" style="margin-right: 10px;"></a> <br>
-<a href="https://github.com/sudarshanregmi/reweightood"><img src="https://img.shields.io/badge/CVPRW'24-ReweightOOD-f4d5b3?style=for-the-badge" alt="t2fnorm" style="margin-right: 10px;"></a>
-
+<a href="https://github.com/sudarshanregmi/reweightood"><img src="https://img.shields.io/badge/CVPRW'24-ReweightOOD-f4d5b3?style=for-the-badge" alt="reweightood" style="margin-right: 10px;"></a> <br>
+<a href="https://github.com/sudarshanregmi/adascale"><img src="https://img.shields.io/badge/arXiv'25-AdaSCALE-fdd7e6?style=for-the-badge" alt="adascale" style="margin-right: 10px;"></a>
 
 ### Follow [OpenOOD](https://github.com/Jingkang50/OpenOOD) official instruction to complete the setup.
 ```
