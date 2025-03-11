@@ -45,7 +45,7 @@ bash scripts/download/download_ascood.sh
 
 These datasets are adapted from [OpenOOD](https://github.com/Jingkang50/OpenOOD), [Spurious_OOD](https://github.com/deeplearning-wisc/Spurious_OOD) and [MixOE](https://github.com/zjysteven/MixOE).
 
-### Example Scripts for Training and Inference
+### Example Scripts for ASCOOD Training and Inference
 Use the following scripts for training and inferencing the ASCOOD model:
 
 ```bash
@@ -90,8 +90,18 @@ Example of inference script (eg. ```scripts/ood/ascood/waterbirds_test_ascood.sh
 python scripts/eval_ood.py \
    --id-data waterbirds \
    --wrapper-net ASCOODNet \
-   --root ./results/waterbird_ios_net_ios_e30_lr0.01_w0.1_p0.1_otype_gradient_nmg_30.0_300.0_default \
+   --root ./results/waterbird_ascood_net_ascood_e30_lr0.01_w0.1_p0.1_otype_gradient_nmg_30.0_300.0_default \
    --postprocessor odin --save-score --save-csv
+```
+
+### Example Scripts for i-ODIN inference
+Use the following scripts for inference using i-ODIN postprocessor:
+
+```bash
+bash scripts/ood/iodin/cifar10_test_ood_iodin.sh
+bash scripts/ood/iodin/cifar100_test_ood_iodin.sh
+bash scripts/ood/iodin/imagenet200_test_ood_iodin.sh
+bash scripts/ood/iodin/imagenet_test_ood_iodin.sh
 ```
 
 ### Pre-trained checkpoints
@@ -115,12 +125,25 @@ Pre-trained models are available in the given links:
   <img width="400" src="imgs/finegrained_setting.png">
 </p>
 
+- ODIN vs. i-ODIN:
+<p align="center">
+  <img width="400" src="imgs/odin_vs_iodin.png">
+</p>
+
 - Comparison with OE methods:
 <p align="center">
   <img width="400" src="imgs/ascood_vs_oe.png">
 </p>
 
-- Outlier synthesis ablation in Waterbirds datasets
+- Ablation studies
+<p align="center">
+  <img width="400" src="imgs/feature_space_ablation.png">
+</p>
+
+<p align="center">
+  <img width="400" src="imgs/fine_grained_outlier_synthesis_ablation.png">
+</p>
+
 <p align="center">
   <img width="400" src="imgs/outlier_synthesis_ablation.png">
 </p>

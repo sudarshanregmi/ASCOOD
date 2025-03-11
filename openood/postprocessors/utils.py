@@ -25,6 +25,7 @@ from .mds_ensemble_postprocessor import MDSEnsemblePostprocessor
 from .mos_postprocessor import MOSPostprocessor
 from .npos_postprocessor import NPOSPostprocessor
 from .odin_postprocessor import ODINPostprocessor
+from .iodin_postprocessor import IODINPostprocessor
 from .opengan_postprocessor import OpenGanPostprocessor
 from .openmax_postprocessor import OpenMax
 from .patchcore_postprocessor import PatchcorePostprocessor
@@ -53,6 +54,7 @@ def get_postprocessor(config: Config):
         'msp': BasePostprocessor,
         'ebo': EBOPostprocessor,
         'odin': ODINPostprocessor,
+        'iodin': IODINPostprocessor,
         'mds': MDSPostprocessor,
         'mds_ensemble': MDSEnsemblePostprocessor,
         'rmds': RMDSPostprocessor,
