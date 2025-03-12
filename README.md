@@ -105,7 +105,7 @@ bash scripts/ood/iodin/imagenet200_test_ood_iodin.sh
 bash scripts/ood/iodin/imagenet_test_ood_iodin.sh
 ```
 
-Please see [**iodin_results folder**](./iodin_results/) for [**OpenOOD v1.5 benchmark**](https://zjysteven.github.io/OpenOOD/#leaderboard) results.
+Please see [**openoodv1.5_results folder**](./openoodv1.5_results/) for [**OpenOOD v1.5 benchmark**](https://zjysteven.github.io/OpenOOD/#leaderboard) results.
 
 ### Pre-trained checkpoints
 Pre-trained models are available in the given links:
