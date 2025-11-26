@@ -1,7 +1,7 @@
-# Going Beyond Conventional OOD Detection 
+# Going Beyond Conventional OOD Detection / Image-based Outlier Synthesis With Training Data
 This codebase provides a Pytorch implementation of:
 
->**Going Beyond Conventional OOD Detection**  
+>**Going Beyond Conventional OOD Detection / Image-based Outlier Synthesis With Training Data**  
 [![ASCOOD](https://img.shields.io/badge/arXiv'25-ASCOOD-fdd7e6?style=for-the-badge)](https://arxiv.org/abs/2411.10794)  
 [![i-ODIN](https://img.shields.io/badge/arXiv'25-iODIN-fdd7e6?style=for-the-badge)](https://arxiv.org/abs/2411.10794)  
 Sudarshan Regmi
@@ -11,7 +11,7 @@ Sudarshan Regmi
 </p>
 
 ## Abstract
-Out-of-distribution (OOD) detection is critical to ensure the safe deployment of deep learning models in critical applications. Deep learning models can often misidentify OOD samples as in-distribution (ID) samples. This vulnerability worsens in the presence of spurious correlation in the training set. Likewise, in fine-grained classification settings, detection of fine-grained OOD samples becomes inherently challenging due to their high similarity to ID samples. However, current research on OOD detection has largely ignored these challenging scenarios, focusing instead on relatively easier (conventional) cases. In this work, we present a unified Approach to Spurious, fine-grained, and Conventional OOD Detection (ASCOOD). First, we propose synthesizing virtual outliers from ID data by approximating the destruction of invariant features. To this end, we identify invariant features with the pixel attribution method using the model being learned. This approach eliminates the burden of curating external OOD datasets. Then, we simultaneously incentivize ID classification and predictive uncertainty towards virtual outliers leveraging standardized feature representation. Our approach effectively mitigates the impact of spurious correlations and encourages capturing fine-grained attributes. Extensive experiments across seven datasets demonstrate the merit of ASCOOD in spurious, fine-grained, and conventional settings.
+Out-of-distribution (OOD) detection is critical to ensure the safe deployment of deep learning models in critical applications. Deep learning models can often misidentify OOD samples as in-distribution (ID) samples. This vulnerability worsens in the presence of spurious correlation in the training set. Likewise, in fine-grained classification settings, detection of fine-grained OOD samples becomes inherently challenging due to their high similarity to ID samples. However, current research on OOD detection has focused instead largely on relatively easier (conventional) cases. Even the few recent works addressing these challenging cases rely on carefully curated or synthesized outliers, ultimately requiring external data. This motivates our central research question: ``Can we innovate OOD detection training framework for fine-grained and spurious settings \textbf{without requiring any external data at all?}" In this work, we present a unified \textbf{A}pproach to \textbf{S}purious, fine-grained, and \textbf{C}onventional \textbf{OOD D}etection (\textbf{\ASCOOD}) that eliminates the reliance on external data. First, we synthesize virtual outliers from ID data by approximating the destruction of invariant features. Specifically, we propose to add gradient attribution values to ID inputs to disrupt invariant features while amplifying true-class logit, thereby synthesizing challenging near-manifold virtual outliers. Then, we simultaneously incentivize ID classification and predictive uncertainty towards virtual outliers. For this, we further propose to leverage standardized features with z-score normalization. ASCOOD effectively mitigates impact of spurious correlations and encourages capturing fine-grained attributes. Extensive experiments across \textbf{7} datasets and and comparisons with \textbf{30+} methods demonstrate merit of ASCOOD in spurious, fine-grained and conventional settings.
 
 <span>Check other works:</span>
 
@@ -36,7 +36,8 @@ pip install git+https://github.com/Jingkang50/OpenOOD
 - Conventional setting:
   - CIFAR-10
   - CIFAR-100
-
+  - ImageNet-100
+    
 Visit [Google Drive](https://drive.google.com/drive/folders/137JTYkq4ykJ1NwP_LIYkowQEgegtsKp-?usp=sharing) for datasets and checkpoints.
 
 You may download necessary datasets and checkpoints with the following command:
@@ -118,14 +119,9 @@ Pre-trained models are available in the given links:
 - CIFAR-100 [[Google Drive]](https://drive.google.com/drive/folders/1oTpZfuad0YTXdtjEEGblY46Ti-aHJPcF?usp=drive_link): ResNet-18 backbone trained on CIFAR-100 datasets with ASCOOD across 3 trials.
 
 ### Results
-- Spurious and Conventional setting:
+- Fine-grained, Spurious and Conventional settings:
 <p align="center">
   <img width="800" src="imgs/spurious_and_conventional_setting.png">
-</p>
-
-- Fine-grained setting:
-<p align="center">
-  <img width="400" src="imgs/finegrained_setting.png">
 </p>
 
 - ODIN vs. i-ODIN:
@@ -145,10 +141,6 @@ Pre-trained models are available in the given links:
 
 <p align="center">
   <img width="400" src="imgs/fine_grained_outlier_synthesis_ablation.png">
-</p>
-
-<p align="center">
-  <img width="400" src="imgs/outlier_synthesis_ablation.png">
 </p>
 
 ### Consider citing this work if you find it useful.
