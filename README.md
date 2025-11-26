@@ -140,7 +140,7 @@ Pre-trained models are available in the given links:
 </p>
 
 <p align="center">
-  <img width="400" src="imgs/fine_grained_outlier_synthesis_ablation.png">
+  <img width="400" src="imgs/outlier_synthesis.png">
 </p>
 
 ### Consider citing this work if you find it useful.
