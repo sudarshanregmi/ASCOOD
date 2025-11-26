@@ -121,7 +121,7 @@ Pre-trained models are available in the given links:
 ### Results
 - Fine-grained, Spurious and Conventional settings:
 <p align="center">
-  <img width="800" src="imgs/spurious_and_conventional_setting.png">
+  <img width="800" src="imgs/main.png">
 </p>
 
 - ODIN vs. i-ODIN:
