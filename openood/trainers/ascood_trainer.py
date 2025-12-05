@@ -56,6 +56,9 @@ class ASCOODTrainer:
         self.alpha_max = config.alpha_max
 
     def get_saliency_map(self, data, labels):
+        # ****************************************************************************
+        # *** You may obtain saliency map in training mode (instead of eval mode)! ***
+        # ****************************************************************************
         self.net.eval()
         data.requires_grad = True
         logit = self.net(data)
