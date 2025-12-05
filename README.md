@@ -78,6 +78,8 @@ ASCOOD model uses these hyperparameters: ```p_inv, ood_type, alpha_min, alpha_ma
 - alpha_min: initial value of alpha (eg. 30.0)
 - alpha_max: final value of alpha (eg. 300.0) [alpha is calculated by linearly decreasing its value from alpha_max to alpha_min over the course of the training epochs.]
 
+### Note: Inside ASCOOD trainer, you may obtain saliency map in training mode (instead of eval mode)
+
 Training arguments can be passed as:
 ```bash
 bash scripts/ood/ascood/waterbirds_train_ascood.sh --trainer.trainer_args.ood_type gradient
