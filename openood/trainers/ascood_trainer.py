@@ -15,7 +15,7 @@ from .lr_scheduler import cosine_annealing
 
 class ASCOODTrainer:
     def __init__(self, net: nn.Module, train_loader: DataLoader,
-                 val_loader: DataLoader, config: Config) -> None:
+                 config: Config) -> None:
 
         self.net = net
         try:
@@ -50,10 +50,10 @@ class ASCOODTrainer:
         self.w = config.trainer.trainer_args.w
         self.num_classes = config.dataset.num_classes
         self.kl_loss = nn.KLDivLoss(reduction='batchmean')
-        self.p_inv = config.p_inv
-        self.ood_type = config.ood_type
-        self.alpha_min = config.alpha_min
-        self.alpha_max = config.alpha_max
+        self.p_inv = config.trainer.trainer_args.p_inv
+        self.ood_type = config.trainer.trainer_args.ood_type
+        self.alpha_min = config.trainer.trainer_args.alpha_min
+        self.alpha_max = config.trainer.trainer_args.alpha_max
 
     def get_saliency_map(self, data, labels):
         # ****************************************************************************
