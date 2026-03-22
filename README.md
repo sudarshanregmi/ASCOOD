@@ -1,9 +1,9 @@
-# Going Beyond Conventional OOD Detection / Image-based Outlier Synthesis With Training Data
+# Image-based Outlier Synthesis With Training Data
 This codebase provides a Pytorch implementation of:
 
->**Going Beyond Conventional OOD Detection / Image-based Outlier Synthesis With Training Data**  
-[![ASCOOD](https://img.shields.io/badge/arXiv'25-ASCOOD-fdd7e6?style=for-the-badge)](https://arxiv.org/abs/2411.10794)  
-[![i-ODIN](https://img.shields.io/badge/arXiv'25-iODIN-fdd7e6?style=for-the-badge)](https://arxiv.org/abs/2411.10794)  
+>**Image-based Outlier Synthesis With Training Data**  
+[![ASCOOD](https://img.shields.io/badge/CVPR'26-ASCOOD-fdd7e6?style=for-the-badge)](https://arxiv.org/abs/2411.10794)  
+[![i-ODIN](https://img.shields.io/badge/CVPR'26-iODIN-fdd7e6?style=for-the-badge)](https://arxiv.org/abs/2411.10794)  
 Sudarshan Regmi
 
 <p align="center">
