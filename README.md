@@ -17,7 +17,7 @@ Out-of-distribution (OOD) detection is critical to ensure the safe deployment of
 
 <a href="https://github.com/sudarshanregmi/t2fnorm"><img src="https://img.shields.io/badge/CVPRW'24-T2FNorm-fdd7e6?style=for-the-badge" alt="t2fnorm" style="margin-right: 10px;"></a> <br>
 <a href="https://github.com/sudarshanregmi/reweightood"><img src="https://img.shields.io/badge/CVPRW'24-ReweightOOD-f4d5b3?style=for-the-badge" alt="reweightood" style="margin-right: 10px;"></a> <br>
-<a href="https://github.com/sudarshanregmi/adascale"><img src="https://img.shields.io/badge/arXiv'25-AdaSCALE-fdd7e6?style=for-the-badge" alt="adascale" style="margin-right: 10px;"></a>
+<a href="https://github.com/sudarshanregmi/adascale"><img src="https://img.shields.io/badge/ICML'26-AdaSCALE-fdd7e6?style=for-the-badge" alt="adascale" style="margin-right: 10px;"></a>
 
 ### Follow [OpenOOD](https://github.com/Jingkang50/OpenOOD) official instruction to complete the setup.
 ```
