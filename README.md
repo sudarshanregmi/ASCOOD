@@ -148,14 +148,14 @@ Pre-trained models are available in the given links:
 ### Consider citing this work if you find it useful.
 
 ```
-@misc{regmi2024goingconventionalooddetection,
-      title={Going Beyond Conventional OOD Detection},
+@misc{regmi2025imagebasedoutliersynthesistraining,
+      title={Image-based Outlier Synthesis With Training Data}, 
       author={Sudarshan Regmi},
-      year={2024},
+      year={2025},
       eprint={2411.10794},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2411.10794},
+      url={https://arxiv.org/abs/2411.10794}, 
 }
 ```
 ### Acknowledgment
