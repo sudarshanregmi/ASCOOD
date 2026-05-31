@@ -148,14 +148,13 @@ Pre-trained models are available in the given links:
 ### Consider citing this work if you find it useful.
 
 ```
-@misc{regmi2025imagebasedoutliersynthesistraining,
-      title={Image-based Outlier Synthesis With Training Data}, 
-      author={Sudarshan Regmi},
-      year={2025},
-      eprint={2411.10794},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2411.10794}, 
+@InProceedings{Regmi_2026_CVPR,
+    author    = {Regmi, Sudarshan},
+    title     = {Image-based Outlier Synthesis With Training Data},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {39338-39350}
 }
 ```
 ### Acknowledgment
